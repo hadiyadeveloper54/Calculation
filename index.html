@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="input">
+        <input type="text" name="" id="value1" placeholder="Enter 1st value">
+    </label>
+    <label for="input">
+        <input type="text" name="" id="value2" placeholder="Enter 2nd value">
+    </label>
+    <button onclick="add()">Add</button>
+    <button onclick="subtract()">Subtract</button>
+    <button onclick="multiply()">Multiply</button>
+    <button onclick="divide()">Divide</button>
+</body>
+<script>
+    function add()
+    {
+        let value1 = document.getElementById("value1").value;
+        let value2 = document.getElementById("value2").value;
+        alert(parseFloat(value1) + parseFloat(value2))
+    }
+
+    function subtract()
+    {
+        let value1 = document.getElementById("value1").value;
+        let value2 = document.getElementById("value2").value;
+        alert(parseFloat(value1) - parseFloat(value2))
+    }
+
+    function multiply()
+    {
+        let value1 = document.getElementById("value1").value;
+        let value2 = document.getElementById("value2").value;
+        alert(parseFloat(value1) * parseFloat(value2))
+    }
+
+    function divide()
+    {
+        let value1 = document.getElementById("value1").value;
+        let value2 = document.getElementById("value2").value;
+        alert(parseFloat(value1) / parseFloat(value2))
+    }
+</script>
+</html>
